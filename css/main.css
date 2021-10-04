@@ -194,7 +194,7 @@ ul li a {
 }
 
 .section-one .container .hero .col-2 img {
-    width: 584px;
+    width: 582px;
     height: 618px;
 }
 
@@ -314,6 +314,9 @@ ul li a {
 
 }
 @media (max-width: 300px) {
+    .section-one {
+        height: 690px;
+    }
     .section-one .container .hero .col-2 img {
         width: 180px;
     }
@@ -326,6 +329,21 @@ ul li a {
     }
     .section-one .container .hero .col-1 h6 {
         font-size: 12px;
+        min-height: 140px;
+    }
+}
+@media (max-width: 286px) {
+    .section-one {
+        overflow: hidden;
+
+    }
+    .section-one .container .hero .col-1 {
+        margin: -35px;
+    }
+}
+@media (max-width: 270px) {
+    .section-one {
+        height: 660px;
     }
 }
 /* ====Start Hero==== */
@@ -354,6 +372,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     gap: 23px;
+    min-width: 200px;
 }
 
 .section-two .container .row-1 .col-1 img {
@@ -371,6 +390,7 @@ ul li a {
     flex-direction: column;
     gap: 14.5px;
     align-items: flex-end;
+    min-width: 260px;
 }
 
 .section-two .container .row-1 .col-2 .stars {
@@ -415,7 +435,6 @@ ul li a {
         width:100px;
     }
 }
-
 @media (max-width: 768px) {
     .section-two .container .row-1 {
         gap: 2rem;
@@ -433,23 +452,149 @@ ul li a {
         width: 100%;
     }
 }
-
-@media (max-width: 468px) {
-    .section-two .container .col-1 {
-        flex-direction: column;
+@media (max-width: 590px) {
+    .section-two .container {
+        gap: 60px;
     }
-    .section-two .container .row-2 img{
-        width:60px;
-    }
-}
-
-@media (max-width: 365px) {
     .section-two .container .row-2 {
         display: grid;
-        grid-template-columns: 25% 25%;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+    }
+}
+@media (max-width: 590px) {
+    .section-two {
+        margin-top: 30px;
+    }
+    .section-two .container .row-1 {
+        flex-direction: column;
+    }
+    .section-two .container .row-1 .col-1 {
         align-items: center;
     }
-    .section-two .container .row-2 img:nth-child(5) {
+    .section-two .container .row-1 .col-2 {
+        align-items: center;
+    }
+}
+@media (max-width: 375px) {
+    .section-two {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .section-two .container {
+        gap: 45px;
+    }
+    .section-two .container .row-1 .col-1 {
+        max-width: 250px;
+        text-align: center;
+    }
+    .section-two .container .row-1 .col-2 {
+        max-width: 220px;
+    }
+    .section-two .container .row-2 {
+        grid-template-columns: 50%;
+        justify-items: center;
     }
 }
 /* End Section two */
+
+/* Start Section Three */
+.section-three {
+    margin-top: 40px;
+    padding-top: 79px;
+    padding-bottom: 79px;
+}
+
+.section-three .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-three .container .row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.section-three .container .row-1 span {
+    width: 41px;
+    height: 4px;
+    background-color: #000339;
+    border-radius: 12px;
+}
+
+.section-three .container .row-1 h1{
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #000339;
+
+}
+
+.section-three .container .row-1 p {
+    margin-top: 20px;
+    width: 460px;
+    text-align: center;
+    font-size: 16px;
+    color: #5A6473;
+}
+
+.section-three .container .row-2 {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 140px;
+}
+
+.section-three .container .row-2 .col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-three .container .row-2 .col-1 img {
+    width: 47px;
+}
+
+.section-three .container .row-2 .col-1 h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3B3C45;
+    margin-top: 26px;
+}
+
+.section-three .container .row-2 .col-1 a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0689FF;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.section-three .container .row-2 .col-1 a img {
+    width: 24px;
+}
+
+.section-three .container .row-3 {
+    margin-top: 48px;
+    background: #0F1B4C;
+    min-width: 170px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px; 
+}
+
+.section-three .container .row-3 a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+/* End Section Three */
