@@ -246,7 +246,7 @@ ul li a {
         gap: 15px;
     }
     .section-one .container .hero .col-2 img {
-        width: 250px;
+        width: 240px;
     }
     .section-one .container .hero .col-1 h5 {
         font-size: 16px;
@@ -313,7 +313,7 @@ ul li a {
     }
 
 }
-@media (max-width: 300px) {
+@media (max-width: 305px) {
     .section-one {
         height: 690px;
     }
@@ -325,7 +325,7 @@ ul li a {
     }
     .section-one .container .hero .col-1 h1 {
         max-width: 205px;
-        font-size: 20px;
+        font-size: 22px;
     }
     .section-one .container .hero .col-1 h6 {
         font-size: 12px;
@@ -335,7 +335,6 @@ ul li a {
 @media (max-width: 286px) {
     .section-one {
         overflow: hidden;
-
     }
     .section-one .container .hero .col-1 {
         margin: -35px;
@@ -532,6 +531,7 @@ ul li a {
     font-size: 35px;
     font-weight: 700;
     color: #000339;
+    text-align: center;
 
 }
 
@@ -566,6 +566,7 @@ ul li a {
     font-weight: 500;
     color: #3B3C45;
     margin-top: 26px;
+    text-align: center;
 }
 
 .section-three .container .row-2 .col-1 a {
@@ -574,6 +575,7 @@ ul li a {
     color: #0689FF;
     margin-top: 10px;
     text-decoration: none;
+    text-align: center;
 }
 
 .section-three .container .row-2 .col-1 a img {
@@ -596,5 +598,79 @@ ul li a {
     font-weight: 600;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+@media (max-width: 565px){
+    .section-three{
+        padding-top: 50px;
+    }
+    .section-three .container .row-2 {
+        gap: 50px;
+    }
+}
+@media (max-width: 465px) {
+    .section-three{
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+    .section-three .container .row-1 p {
+        width: 300px;
+    }
+    .section-three .container .row-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 340px) {
+    .section-three{
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+    .section-three .container .row-1 h1 {
+        font-size: 30px;
+    }
+    .section-three .container .row-1 p {
+        width: 250px;
+    }
+    .section-three .container .row-2 {
+        gap: 30px;
+    }
+}
+@media (max-width: 255px) {
+    .section-three .container .row-1 h1 {
+        font-size: 25px;
+    }
+    .section-three{
+        margin-top: 0px;
+    }
+    .section-three .container .row-1 p {
+        width: 180px;
+    }
+}
+@media (max-width: 220px) {
+    .section-three .container .row-1 h1 {
+        font-size: 20px;
+    }
+    .section-three .container .row-1 p {
+        font-size: 14px;
+        width: 150px;
+    }
+    .section-three .container .row-3 {
+        min-width: 150px;
+    }
+}
+@media (max-width: 150px) {
+    .section-three {
+        overflow: hidden;
+    }
+    .section-three .container .row-1 h1 {
+        width: 100px;
+    }
+    .section-three .container .row-1 p {
+        width: 100px;
+    }
+    .section-three .container .row-3 {
+        min-width: 120px;
+    }
 }
 /* End Section Three */
