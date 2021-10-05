@@ -138,6 +138,7 @@ ul li a {
 .section-one .container .hero {
     display: flex;
     gap: 67px;
+    justify-content: space-between;
 }
 
 .section-one .container .hero .col-1 {
@@ -194,8 +195,8 @@ ul li a {
 }
 
 .section-one .container .hero .col-2 img {
-    width: 582px;
-    height: 618px;
+    width: 575px;
+    margin-top: 6px;
 }
 
 @media (max-width: 1260px) {
@@ -206,14 +207,13 @@ ul li a {
         margin-top: 0;
     }
     .section-one .container .hero .col-2 img {
-        width: 400px;
+        width:  390px;
     }
     .section-one .container .hero .col-1 {
         margin-top: 100px;
     }
 }
 @media (max-width: 1100px) {
-
     .section-one .container .hero .col-1 h1 {
         font-size: 50px;
         max-width: 450px;
@@ -223,6 +223,9 @@ ul li a {
     }
 }
 @media (max-width: 1000px) {
+    .section-one {
+        height: 550px;
+    }
     .section-one .container nav .logo-menu {
         gap: 30px;
     }
@@ -230,7 +233,7 @@ ul li a {
         margin-top: 0;
     }
     .section-one .container .hero .col-2 img {
-        width: 300px;
+        width: 292px;
         height: 400px;
     }
     .section-one .container .hero .col-1 h1 {
@@ -266,7 +269,7 @@ ul li a {
         display: flex;
     }
     .section-one .container .hero .col-1 h1 {
-        max-width: 300px;
+        max-width: 299px;
         padding-bottom: 15px;
         font-size: 34px;
     }
@@ -309,40 +312,29 @@ ul li a {
     .section-one .container .hero .col-2 img {
         margin-top: -60px;
         width: 220px;
-        max-height: 400px;
+        max-height: 350px;
     }
 
 }
-@media (max-width: 305px) {
+@media (max-width: 315px) {
     .section-one {
-        height: 690px;
+        max-height: 645px;
     }
     .section-one .container .hero .col-2 img {
+        padding-top: 60px;
         width: 180px;
     }
     .section-one .container .hero .col-1 h5 {
         font-size: 14px;
     }
     .section-one .container .hero .col-1 h1 {
-        max-width: 205px;
-        font-size: 22px;
+        max-width: 200px;
+        font-size: 20px;
     }
     .section-one .container .hero .col-1 h6 {
         font-size: 12px;
         min-height: 140px;
-    }
-}
-@media (max-width: 286px) {
-    .section-one {
-        overflow: hidden;
-    }
-    .section-one .container .hero .col-1 {
-        margin: -35px;
-    }
-}
-@media (max-width: 270px) {
-    .section-one {
-        height: 660px;
+        max-width: 245px;
     }
 }
 /* ====Start Hero==== */
@@ -350,7 +342,7 @@ ul li a {
 
 /* Start Section two */
 .section-two {
-    margin-top: 79px;
+    margin-top: 65px;
 }
 
 .section-two .container {
@@ -537,7 +529,7 @@ ul li a {
 
 .section-three .container .row-1 p {
     margin-top: 20px;
-    width: 460px;
+    width: 450px;
     text-align: center;
     font-size: 16px;
     color: #5A6473;
@@ -608,20 +600,22 @@ ul li a {
         gap: 50px;
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 475px) {
     .section-three{
         margin-top: 0px;
         padding-top: 40px;
     }
     .section-three .container .row-1 p {
-        width: 300px;
+        width: 330px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .section-three .container .row-2 {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
-@media (max-width: 340px) {
+@media (max-width: 350px) {
     .section-three{
         margin-top: 0px;
         padding-top: 40px;
