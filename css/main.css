@@ -965,3 +965,20 @@ ul li a {
     }
 }
 /* End Section Four */
+
+/* Start Section Five */
+.section-five {
+    height: 785px;
+    margin-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-five .container .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* End Section Five */
