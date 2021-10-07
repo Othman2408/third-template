@@ -1215,4 +1215,132 @@ ul li a {
 .section-six .container .row-1 img {
     margin-bottom: 40px;
 }
+
+@media (max-width: 1200px) {
+    .section-six .container .row-1 img {
+        margin-bottom: 0px;
+        width: 197px;
+    }
+}
+@media (max-width: 1000px) {
+    .section-six .container .row-1 {
+        padding: 0;
+    }
+    .section-six .container .row-1 .text {
+        gap: 20px;
+        align-items: center;
+    }
+    .section-six .container .row-1 img {
+        display: none;
+    } 
+}
+@media (max-width: 570px) {
+    .section-six .container .row-1 {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .section-six .container .row-1 .text h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 230px) {
+    .section-six {
+        overflow: hidden;
+    }
+}
 /* End Section Six */
+
+/* Start Section Seven (Footer) */
+footer {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 58px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 74px;
+}
+
+footer .container .row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .row-1 .list {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+footer .container .row-1 .list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1C1C1D;
+}
+
+footer .container .row-1 .list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+footer .container .row-1 .list ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7A7E;
+}
+
+footer .container .row-1 .last-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 250px;
+}
+
+footer .container .row-1 .last-list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1C1C1D;
+}
+
+footer .container .row-1 .last-list p {
+    font-size: 16px;
+    color: #7A7A7E;
+    font-weight: 400;
+}
+
+footer .container .row-1 .last-list .icons {
+    display: flex;
+    gap: 16px;
+}
+
+footer .container .row-1 .last-list .icons img {
+    transition: all 150ms linear;
+    width: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer .container .row-1 .last-list .icons img:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 10px 4px #cacaca63;
+    border: 1px solid #cacaca61;
+}
+
+footer .container .row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .row-2 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #C2C2C2;
+}
+/* End Section Seven (Footer) */
