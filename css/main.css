@@ -1,7 +1,3 @@
-/* Start Variables */
-
-/* End Variables */
-
 /* Start Global Rules */
 
 * {
@@ -11,6 +7,23 @@
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #646464;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #585858;;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -100,6 +113,7 @@ ul li a {
     display: none;
     color: #0F1B4C;
     font-size: 24px;
+    cursor: p;
 }
 
 .section-one .container nav .logo-menu ul{
@@ -186,7 +200,20 @@ ul li a {
     font-weight: bold;
     margin-bottom: 0;
     padding-bottom: 30px;
-    pointer-events: none;
+    cursor: pointer;
+}
+
+.section-one .container .hero .col-1 h1::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background: #000336;
+    transition: all 450ms ease;
+}
+
+.section-one .container .hero .col-1 h1:hover::after {
+    width: 100%;
 }
 
 .section-one .container .hero .col-1 h6 {
@@ -200,8 +227,8 @@ ul li a {
 .section-one .container .hero .col-1 a {
     color: #FFFFFF;
     background-color: #0F1B4C;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     max-width: 170px;
     height: 50px;
     border-radius: 12px;
@@ -343,7 +370,7 @@ ul li a {
         max-height: 360px;
     }
     .section-one .container .hero .col-2 img {
-        margin-top: -60px;
+        margin-top: -10px;
         width: 220px;
         max-height: 350px;
     }
@@ -351,7 +378,7 @@ ul li a {
 }
 @media (max-width: 315px) {
     .section-one {
-        max-height: 645px;
+        max-height: 700px;
         overflow: hidden;
     }
     .section-one .container .hero .col-2 img {
@@ -502,10 +529,12 @@ ul li a {
     transition: all 250ms ease;
     width: 110px;
     cursor: pointer;
+    filter: grayscale(100%);
 }
 
 .section-two .container .row-2 img:hover {
     transform: scale(1.15);
+    filter: grayscale(0%);
 }
 
 @media (max-width: 975px) {
@@ -624,7 +653,21 @@ ul li a {
     font-weight: 700;
     color: #000339;
     text-align: center;
-    pointer-events: none;
+    cursor: pointer;
+}
+
+.section-three .container .row-1 h1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 6px;
+    margin: auto;
+    background: #000339;
+    transition: all 300ms ease;
+}
+
+.section-three .container .row-1 h1:hover::after {
+    width: 100%;
 }
 
 .section-three .container .row-1 p {
@@ -665,6 +708,7 @@ ul li a {
     color: #3B3C45;
     margin-top: 26px;
     text-align: center;
+    cursor: pointer;
 }
 
 .section-three .container .row-2 .col-1 a {
@@ -830,7 +874,7 @@ ul li a {
     font-size: 35px;
     font-weight: 600;
     color: #000339;
-    pointer-events: none;
+    cursor: pointer;
 }
 
 .section-four .container .row-1 .col-1 p {
@@ -876,6 +920,18 @@ ul li a {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+    transition: all 200ms ease;
+}
+
+.section-four .container .row-2 .card .card-content:hover {
+    box-shadow: 0px 0px 20px 2px #d3d3d399;
+    transform: translateY(-2px);
+}
+
+.section-four .container .row-2 .card .card-content:hover .card-img img {
+    filter: brightness(0.8);
+    transform: scale(1.15);
+
 }
 
 .section-four .container .row-2 .card .card-content .card-img {
@@ -888,10 +944,6 @@ ul li a {
     max-height: 227px;
     transition: all 300ms ease;
     cursor: pointer;
-}
-
-.section-four .container .row-2 .card .card-content .card-img img:hover {
-    transform: scale(1.15);
 }
 
 .section-four .container .row-2 .card .card-content .card-info {
@@ -1096,6 +1148,12 @@ ul li a {
     padding-right: 22px;
     top: 0;
     right: 380px;
+    transition: all 200ms ease;
+}
+
+.section-five .container .row-1 .col-1 .box:hover {
+    box-shadow: 0px 0px 20px 2px rgba(134, 134, 134, 0.233);
+    transform: translateY(-1px);
 }
 
 .section-five .container .row-1 .col-1 .box .row-1 h4{
@@ -1306,6 +1364,19 @@ ul li a {
     cursor: pointer;
 }
 
+.section-six .container .row-1 .text h2::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 6px;
+    background: #FFFFFF;
+    transition: 300ms ease;
+}
+
+.section-six .container .row-1 .text h2:hover::after {
+    width: 100%;
+}
+
 .section-six .container .row-1 .text p {
     font-size: 16px;
     font-weight: 300;
@@ -1326,7 +1397,7 @@ ul li a {
     font-weight: 500;
     border-radius: 12px;
     margin-top: 10px;
-    transition: all 200ms cubic-bezier(0.46, 0.64, 0.32, 1.18);
+    transition: all 250ms cubic-bezier(0.46, 0.64, 0.32, 1.18);
 }
 
 .section-six .container .row-1 .text a:hover {
@@ -1404,6 +1475,7 @@ footer .container .row-1 .list h3 {
     font-size: 20px;
     font-weight: bold;
     color: #1C1C1D;
+    pointer-events: none;
 }
 
 footer .container .row-1 .list ul {
@@ -1416,6 +1488,12 @@ footer .container .row-1 .list ul li a {
     font-size: 16px;
     font-weight: 400;
     color: #7A7A7E;
+    transition: all 200ms ease;
+}
+
+
+footer .container .row-1 .list ul li a:hover {
+    color: #1C1C1D;
 }
 
 footer .container .row-1 .last-list {
@@ -1429,6 +1507,7 @@ footer .container .row-1 .last-list h3 {
     font-size: 20px;
     font-weight: bold;
     color: #1C1C1D;
+    pointer-events: none;
 }
 
 footer .container .row-1 .last-list p {
