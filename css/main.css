@@ -108,6 +108,11 @@ ul li a {
     color: #0F1B4C;
     font-size: 24px;
     cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.section-one .container nav .btns .toggle-menu:hover {
+    color: #7398f7;
 }
 
 .section-one .container nav .logo-menu ul{
