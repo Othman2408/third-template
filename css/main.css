@@ -1,5 +1,4 @@
 /* Start Global Rules */
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -75,11 +74,6 @@ ul li a {
         width: 1170px;
     }
 }
-
-/* XX-Large Screen */
-/* @media (min-width: 1400px) {
-    
-} */
 /* End Global Rules */
 
 /* Start Section One */
@@ -209,7 +203,7 @@ ul li a {
     width: 0;
     height: 10px;
     background: #000336;
-    transition: all 450ms ease;
+    transition: all 350ms ease;
 }
 
 .section-one .container .hero .col-1 h1:hover::after {
@@ -696,6 +690,10 @@ ul li a {
     transform: scale(1.2);
 }
 
+.section-three .container .row-2 .col-1:hover a img{
+    transform: translateX(8px);
+}
+
 .section-three .container .row-2 .col-1 img {
     transition: all 200ms ease;
     width: 47px;
@@ -723,11 +721,6 @@ ul li a {
 
 .section-three .container .row-2 .col-1 a img {
     width: 24px;
-    transition: all 200ms ease;
-}
-
-.section-three .container .row-2 .col-1 a:hover img{
-    transform: translateX(8px);
 }
 
 .section-three .container .row-3 {
@@ -877,6 +870,19 @@ ul li a {
     cursor: pointer;
 }
 
+.section-four .container .row-1 .col-1 h1::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 6px;
+    background: #000339;
+    transition: all 300ms ease;
+}
+
+.section-four .container .row-1 .col-1 h1:hover::after {
+    width: 92%;
+}
+
 .section-four .container .row-1 .col-1 p {
     font-size: 16px;
     font-weight: 400;
@@ -1018,8 +1024,6 @@ ul li a {
     .section-four .container .row-1 .col-1 {
         text-align: center;
     }
-}
-@media (max-width:768px) {
     .section-four .container .row-2 .card .card-content{
         width: 280px;
         height: 325px;
@@ -1038,6 +1042,13 @@ ul li a {
         font-size: 12px;
     }
 }
+
+@media (max-width:755px) {
+    .section-four .container .row-1 .col-1 h1:hover::after {
+        width: 98%;
+    }
+}
+
 @media (max-width:300px) {
     .section-four .container .row-2 .card .card-content {
         width: 230px;
@@ -1229,6 +1240,7 @@ ul li a {
     font-weight: 600;
     color: #000339;
     line-height: 45px;
+    cursor: pointer;
 }
 
 .section-five .container .row-1 .col-2 .text p {
@@ -1264,6 +1276,7 @@ ul li a {
     font-weight: 500;
     color: #7B8087;
     text-align: center;
+    pointer-events: none;
 }
 
 @media (max-width: 1240px) { 
@@ -1374,7 +1387,7 @@ ul li a {
 }
 
 .section-six .container .row-1 .text h2:hover::after {
-    width: 100%;
+    width: 92%;
 }
 
 .section-six .container .row-1 .text p {
@@ -1428,6 +1441,13 @@ ul li a {
         display: none;
     } 
 }
+
+@media (max-width:975px) {
+    .section-six .container .row-1 .text h2:hover::after {
+        width: 100%;
+    }
+}
+
 @media (max-width: 580px) {
     .section-six .container .row-1 {
         width: auto;
