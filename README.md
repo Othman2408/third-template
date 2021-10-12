@@ -1,5 +1,5 @@
 # Third-Template
-##My third template using HTML and CSS only.
+## My third template using HTML and CSS only.
 ### [Demo](https://my-third-template.netlify.app/)
 
-![Picture](https://ibb.co/zQqxnTb)
+![Picture](https://k.top4top.io/p_2111wlhuo1.jpeg)
