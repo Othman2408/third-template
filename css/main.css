@@ -344,7 +344,7 @@ ul li a {
 }
 @media (max-width: 585px) {
     .section-one  {
-        height: 740px;
+        height: 760px;
     }
     .section-one .container .hero {
         flex-direction: column-reverse;
